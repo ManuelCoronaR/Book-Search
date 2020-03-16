@@ -6,11 +6,11 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
+        <div className="navbar-nav text-danger">
           <Link
             to="/"
             className={
-              window.location.pathname === "/" ? "nav-link active" : "nav-link"
+              window.location.pathname === "/" ? "nav-link bg-dark" : "nav-link bg-dark "
             }
           >
             Books
@@ -19,8 +19,8 @@ function Nav() {
             to="/search"
             className={
               window.location.pathname === "/search"
-                ? "nav-link active"
-                : "nav-link"
+                ? "nav-link "
+                : "nav-link  bg-dark"
             }
           >
             Search
@@ -29,8 +29,8 @@ function Nav() {
             to="/saved"
             className={
               window.location.pathname === "/saved"
-                ? "nav-link active"
-                : "nav-link"
+                ? "nav-link"
+                : "nav-link bg-dark"
             }
           >
             Saved
